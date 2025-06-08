@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    ;
+}
+body {
+    background-color: black;
+}
+.main {
+    background-image: url(assets/img/banner1.jpg);
+    height: 70vh;
+    position: relative;
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+nav {
+    display: flex;
+    max-width: 60vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 62px;
+}
+nav img {
+    width: 144px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+
+    z-index: 2;
+    position: relative
+}
+.hero> :first-child {
+    font-family: "Martel Sans", sans-serif;
+
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+.second {
+    font-family: "Martel Sans", sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+.third {
+    font-family: "Martel Sans", sans-serif;
+    text-align: center;
+
+}
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+   
+}
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 23px;
+    z-index: 2;
+    position: relative;
+}
+nav {
+    z-index: 3;
+    position: relative;
+}
+.hero input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+}
+.hero button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.nav-buttons button {
+    padding: 8px 14px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4vw;
+    position: relative;
+    z-index: 2;
+}
+.lang {
+    padding: 8px 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.sign {
+    padding: 8px 16px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+}
