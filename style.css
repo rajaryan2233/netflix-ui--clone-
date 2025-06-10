@@ -17,7 +17,7 @@ body {
     background-size: max(1200px, 100vw);
     background-position: center center;
     background-repeat: no-repeat;
-
+    overflow: hidden; /* prevents .hero from spilling out */
 }
 nav {
     display: flex;
@@ -36,18 +36,6 @@ nav img {
 nav button {
     position: relative;
     z-index: 10;
-}
-.hero {
-    font-family: "Martel Sans", sans-serif;
-    color: white;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    flex-direction: column;
-
-    z-index: 2;
-    position: relative
 }
 .hero> :first-child {
     font-family: "Martel Sans", sans-serif;
@@ -68,16 +56,16 @@ nav button {
     text-align: center;
 
 }
+
 .main .box {
-    height: 80vh;
-    width: 100%;
-    opacity: 0.2;
+    height: 70vh;
+    width: 100%; /* correct width */
+    position: absolute;
     top: 0;
     left: 0;
-    position: absolute;
     background-color: black;
+    opacity: 0.5;
     z-index: 1;
-   
 }
 .hero {
     font-family: "Martel Sans", sans-serif;
@@ -85,11 +73,15 @@ nav button {
     justify-content: center;
     display: flex;
     align-items: center;
-    height: 100%;
     flex-direction: column;
-    gap: 23px;
+    text-align: center;
+    gap: 16px; /* add spacing, but reasonable */
+    height: 100%;
+    width: 100%;
     z-index: 2;
     position: relative;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 nav {
     z-index: 3;
@@ -144,3 +136,111 @@ nav {
     border-radius: 4px;
     font-weight: 600;
 }
+
+.heading{
+    background-color: #111;
+    color: white;
+    padding: 30px;
+    
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+}.card-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #111;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  scroll-behavior: smooth;
+}
+
+.card img {
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+/* Hide scrollbar */
+.card::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+.scroll-btn.right {
+  right: 10px;
+}
+.reasons-section {
+  padding: 60px 5%;
+  background-color: #000;
+  color: white;
+}
+
+.reasons-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.reasons-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.reason-card {
+  background-color: #6e5d9c;
+  padding: 25px;
+  border-radius: 12px;
+  flex: 1 1 250px;
+  max-width: 400px;
+  min-height: 180px;
+  transition: transform 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: scale(1.05);
+}
+
+.reason-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.reason-card p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+
