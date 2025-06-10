@@ -17,7 +17,7 @@ body {
     background-size: max(1200px, 100vw);
     background-position: center center;
     background-repeat: no-repeat;
-    overflow: hidden; /* prevents .hero from spilling out */
+    /* prevents .hero from spilling out */
 }
 nav {
     display: flex;
@@ -140,7 +140,7 @@ nav {
 .heading{
     background-color: #111;
     color: white;
-    padding: 30px;
+    padding: 70px;
     
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
