@@ -40,13 +40,13 @@ nav button {
 .hero> :first-child {
     font-family: "Martel Sans", sans-serif;
 
-    font-size: 48px;
+    font-size: 38px;
     font-weight: bolder;
     text-align: center;
 }
 .second {
     font-family: "Martel Sans", sans-serif;
-    font-size: 48px;
+    font-size: 38px;
     font-weight: bolder;
     text-align: center;
 
@@ -75,7 +75,7 @@ nav button {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    gap: 16px; /* add spacing, but reasonable */
+    /* gap: 16px; add spacing, but reasonable */
     height: 100%;
     width: 100%;
     z-index: 2;
